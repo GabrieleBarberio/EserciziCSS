@@ -1,0 +1,49 @@
+/* Utility */
+:root{
+    --border-card: 2px grey solid;
+}
+
+body{
+    margin: 12px;
+    padding: 0px;
+}
+/* Generali */
+
+p{
+    padding: 4px;
+    margin: 0px;
+ }
+ 
+
+
+/* Spec */
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: var(--border-card);
+    border-radius: 12px;
+}
+
+.card .card-content .card-content-main,
+.card .card-content .card-item,
+.card .card-links{
+    border-top: var(--border-card);
+    padding: 4px;
+    align-items: center;    
+}
+.card > img {
+    display: block;
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px ;
+}
+
+.card .card-links{
+    padding: 20px 20px 20px 4px;
+}
+    
+.card .card-links > a{
+    padding-right: 12px ;
+}

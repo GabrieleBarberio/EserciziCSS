@@ -1,0 +1,65 @@
+/* Utility */
+:root{
+    --border-card: 2px grey solid;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* Generali */
+h3 {
+   font-size: 25px;
+   padding-left: 10px;
+   
+}
+
+p{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+ }
+ 
+
+
+/* Spec */
+.card{
+    width: 400px;
+    border-collapse: collapse;
+    border: var(--border-card);
+    border-radius: 12px;
+}
+
+.card > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: var(--border-card);
+    margin: 0px;
+}
+    
+
+.card .card-content .main{
+    border-bottom: var(--border-card);
+}
+
+.card .card-content .card-item{  
+    border-top: var(--border-card);
+    text-align: left;
+    padding-top: 10px;
+}
+
+.card .card-links{
+    border-top: var(--border-card);
+    padding: 20px;
+    
+}
+
+.card .card-links > a{
+    padding-right: 20px;
+    font-weight: 500;
+    font-size: medium;
+}
