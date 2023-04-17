@@ -9,6 +9,10 @@ body{
 }
 /* Generali */
 
+h3{
+    font-size: 20px;
+}
+
 p{
     padding: 4px;
     margin: 0px;
