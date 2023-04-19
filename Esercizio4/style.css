@@ -55,6 +55,13 @@
   display: flex;
   gap: 20px;
 }
+.navbar-global .searchbox-navbar .search{
+  transform-style:inherit;
+    border:1px solid rgb(2, 92, 2);
+    background-color: #ffffff00;
+   color:rgb(2, 92, 2) ;
+}
+
 
 .navbar-global .searchbox-navbar button:hover {
   background-color: rgb(2, 92, 2);
