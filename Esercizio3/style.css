@@ -1,0 +1,112 @@
+
+/* Utility */
+:root{
+    --radius-b: 6px;
+    --border-b: 1px solid grey;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/* calculator structure */
+.calc{
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 40px);
+    border-collapse: collapse;
+    margin: 20px;
+    box-shadow: 5px 5px 3px #dedede;
+    border-radius: var(--radius-b);
+    font-size: 16px;
+    font-weight: 500;
+}
+.calc .risultato{
+    grid-template: 4fr;
+    grid-column: span 4;
+    padding-right: 8px;
+    padding-top: 8px;
+    border-top-right-radius:var(--radius-b);
+    border-top-left-radius: var(--radius-b);
+    color: aliceblue;
+    background-color: rgb(58, 58, 58);
+    text-align: right;
+}
+    
+    
+.calc .operation{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 4;
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+    
+    
+
+ .calc .numbs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: span 4;
+    grid-column: span 3;
+    border-bottom-left-radius: var(--radius-b);
+}
+
+.calc .operation div,
+.calc .numbs div{
+    
+    text-align: center;
+}
+   
+.calc .numbs div{
+    border-top: var(--border-b);
+    border-right: var(--border-b);
+}
+.calc .operation .plus,
+.calc .operation .less,
+.calc .operation .mult{
+    border-right: var(--border-b);
+}
+
+.calc .equal{
+    grid-row: span 4;
+    border-bottom-right-radius: var(--radius-b);
+    border-top: var(--border-b);
+    background-color: rgba(224, 10, 74, 0.877);
+    text-align: center;
+}
+
+/* button style */
+
+.button, .button0{
+    transform-style: unset;
+    border: none;
+    background-color: #dedede00;
+    width: 100%;
+    height: 100%;     
+}
+/* button hover state */
+.calc .numbs .button:hover{
+    background-color: #c9c9c95e;
+
+}
+
+.calc .operation .button:hover{
+    background-color: rgb(122, 122, 122);
+
+}
+.calc .operation .button:hover{
+    background-color: rgb(122, 122, 122);
+
+}
+
+.calc .equal .button:hover{
+    background-color:rgba(158, 8, 53, 0.973); 
+    border-bottom-right-radius:var(--radius-b) ;
+}
+.calc .numbs .zero .button0:hover{
+    background-color: #c9c9c95e;
+    border-bottom-left-radius: var(--radius-b);
+
+}
