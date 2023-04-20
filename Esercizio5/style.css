@@ -10,6 +10,7 @@ body {
   padding: 0;
   background-image: url(./1211311_9343.jpg);
   display: flex;
+  gap: 40px;
 }
 
 /* Sidebar */
@@ -94,9 +95,7 @@ body {
 
 /* commento per tutor */
 .commento-per-tutor {
-  position: fixed;
-  bottom: 40%;
-  right: 40%;
+  
   width: 300px;
   width: 40vh;
   height: 20vh;
