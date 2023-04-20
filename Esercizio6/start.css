@@ -4,7 +4,7 @@ body{
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto,1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     gap: 40px;
 }
 
@@ -24,20 +24,20 @@ body{
   #yellow {
     background-color: #ffff92;
     grid-column: span 2;
-    grid-row: span 6;
+    grid-row: span 4;
 }
   
   #red {
     
     background-color: #ff919c;
     grid-column: span 2;
-    grid-row: span 6;
+    grid-row: span 4;
   }
   
   #blue {
     background-color: #98d2ff;
     grid-column: span 2;
-    grid-row: span 8;
+    grid-row: span 6;
 }
 
 #yellow ul,
@@ -49,16 +49,16 @@ body{
     align-content: center;
     padding: 25px;
 }
-#yellow li,
-#red li {
+#yellow ul li,
+#red ul li {
     display: grid;
     width: auto;
     height: auto;
     gap: 40px;
     background-color: white;
-    padding: 3em;
-    margin: 3em;
-    justify-content: space-between;
+    padding: 2em;
+    margin: 1em;
+    justify-content: space-around;
     align-items: center;
 }
 
