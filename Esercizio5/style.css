@@ -97,8 +97,7 @@ body {
 .commento-per-tutor {
   
   width: 300px;
-  width: 40vh;
-  height: 20vh;
+  height: 300px;
   border-radius: var(--radius-os);
   border: var(--border-os);
   font-size: large;
