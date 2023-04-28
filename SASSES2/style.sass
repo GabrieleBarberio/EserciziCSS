@@ -1,0 +1,35 @@
+$color-primary: red
+$color-secondary: blue
+$color-tertiary: green
+    
+@mixin article-card($color, $border-color, $font-size)
+    color: $color
+    font-size: $font-size
+    border: 1px solid $border-color
+
+p 
+    margin: 8px
+
+div
+    @include article-card($color-tertiary , $color-primary , 1rem )
+    display: flex
+    flex-direction: column
+    align-items: center
+    h1
+        border-bottom: 1px solid $color-secondary
+    section
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 2rem
+        article
+            &:nth-child(even)
+                color: $color-primary
+            &:nth-child(odd)
+                color: $color-secondary
+            border: 1px solid $color-tertiary
+    
+.footer
+    @include article-card($color-tertiary , $color-secondary , 24px )
+    color: $color-tertiary !important
+    
