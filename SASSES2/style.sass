@@ -18,18 +18,15 @@ div
     h1
         border-bottom: 1px solid $color-secondary
     section
-        display: flex
-        justify-content: center
-        align-items: center
         margin: 2rem
+        display:  flex
         article
             &:nth-child(even)
                 color: $color-primary
             &:nth-child(odd)
                 color: $color-secondary
             border: 1px solid $color-tertiary
-    
-.footer
-    @include article-card($color-tertiary , $color-secondary , 24px )
-    color: $color-tertiary !important
-    
+    &:last-of-type
+        color: $color-tertiary
+        border: 1px solid $color-secondary
+            
