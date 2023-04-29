@@ -1,0 +1,43 @@
+@use "function" as f
+@import "variables"
+
+@mixin article-card($color, $border-color, $font-size)
+    color: $color
+    font-size: f.convert-to-rem($font-size)
+    border: 1px solid $border-color
+
+p 
+    margin: 8px
+
+div
+    @include article-card($color-tertiary , $color-primary , 16 )
+    display: flex
+    width: 90vw
+    flex-direction: column
+    align-items: center
+    & > h1
+        border-bottom: 1px solid $color-secondary
+    & > h2
+        @extend h1
+        padding: 1rem
+        border: 1px red solid
+    section
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: f.convert-to-rem(32)
+        width: 90%
+        max-width: 1200px
+        height: 90%
+        max-height: 500px
+        article
+            &:nth-child(even)
+                color: $color-primary
+            &:nth-child(odd)
+                color: $color-secondary
+            border: 1px solid $color-tertiary
+
+    &:last-of-type
+        color: $color-tertiary
+        border: 1px solid $color-secondary
+            
