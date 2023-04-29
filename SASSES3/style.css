@@ -1,0 +1,39 @@
+p {
+  margin: 8px;
+}
+
+div {
+  color: green;
+  font-size: 1rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div h1 {
+  border-bottom: 1px solid blue;
+}
+div section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+div section article {
+  border: 1px solid green;
+}
+div section article:nth-child(even) {
+  color: red;
+}
+div section article:nth-child(odd) {
+  color: blue;
+}
+
+.footer {
+  color: green;
+  font-size: 1.5pxrem;
+  border: 1px solid blue;
+  color: green !important;
+}
+
+/*# sourceMappingURL=style.css.map */
