@@ -27,8 +27,9 @@ div
             &:nth-child(odd)
                 color: $color-secondary
             border: 1px solid $color-tertiary
-    
-.footer
-    @include article-card($color-tertiary , $color-secondary , 24px )
-    color: $color-tertiary !important
+    &:last-of-type
+        color: $color-tertiary
+        border: 1px solid $color-secondary
+
+
     
